@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting Tool - Plan Your Funds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Budgeting Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="expense-tracker.html">Expense Tracker</a></li>
+                <li><a href="goal-setting.html">Goal Setting</a></li>
+                <li><a href="budgeting-quiz.html">Budgeting Quiz</a></li>
+                <li><a href="interactive-budget-slider.html">Interactive Slider</a></li>
+                <li><a href="visual-budget-chart.html">Visual Chart</a></li>
+                <li><a href="fundraising-appeal.html">Fundraising Appeal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Calculate Your Budget</h2>
+        <div class="budget-calculator">
+            <label for="salary">Monthly Salary:</label>
+            <input type="number" id="salary" placeholder="Enter your salary">
+
+            <label for="expenses">Monthly Expenses:</label>
+            <input type="number" id="expenses" placeholder="Enter your expenses">
+
+            <button id="calculate-budget">Calculate</button>
+            <p id="budget-result"></p>
+        </div>
+
+        <h2>Currency Converter</h2>
+        <div class="currency-converter">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+
+            <label for="from-currency">From:</label>
+            <select id="from-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <!-- Add more currencies as needed -->
+            </select>
+
+            <label for="to-currency">To:</label>
+            <select id="to-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <!-- Add more currencies as needed -->
+            </select>
+
+            <button id="convert-button">Convert</button>
+            <p id="conversion-result"></p>
+        </div>
+
+        <h2>Interactive Budgeting Scenarios</h2>
+        <p>Choose a scenario below to see how you would handle your budget:</p>
+        <button class="scenario-button" data-scenario="1">Scenario 1: Unexpected Expense</button>
+        <button class="scenario-button" data-scenario="2">Scenario 2: Bonus Income</button>
+        <button class="scenario-button" data-scenario="3">Scenario 3: Large Purchase</button>
+
+        <div id="scenario-result" style="margin-top: 20px;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plan Your Funds. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
