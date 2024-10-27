@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Budget Chart - Plan Your Funds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Visual Budget Chart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="budgeting-tool.html">Budgeting Tool</a></li>
+                <li><a href="expense-tracker.html">Expense Tracker</a></li>
+                <li><a href="goal-setting.html">Goal Setting</a></li>
+                <li><a href="budgeting-quiz.html">Budgeting Quiz</a></li>
+                <li><a href="interactive-budget-slider.html">Interactive Slider</a></li>
+                <li><a href="fundraising-appeal.html">Fundraising Appeal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Budget Visualized</h2>
+        <canvas id="budgetChart" width="400" height="400"></canvas>
+        <script>
+            // Sample Chart.js code for visualizing the budget
+            const ctx = document.getElementById('budgetChart').getContext('2d');
+            const budgetChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Rent', 'Food', 'Transport', 'Savings', 'Miscellaneous'],
+                    datasets: [{
+                        label: 'Budget Distribution',
+                        data: [3000, 1500, 500, 2000, 1000],
+                        backgroundColor: ['red', 'blue', 'yellow', 'green', 'purple']
+                    }]
+                }
+            });
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plan Your Funds. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
